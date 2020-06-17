@@ -8,13 +8,7 @@
 			color: white;
 		}
 		
-		a.bar:hover{
-			border: 1px inset white;
-			border-radius: 10px;
-			padding-top: 5px;
-			padding-bottom: 5px;
 		
-		}
 
 		#entire{
 			width: 700px;
