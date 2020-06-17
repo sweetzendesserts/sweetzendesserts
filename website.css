@@ -1,0 +1,31 @@
+
+		a.bar{
+			text-decoration: none;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin: 10px;
+			color: white;
+		}
+		
+		a.bar:hover{
+			border: 1px inset white;
+			border-radius: 10px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		
+		}
+
+		#entire{
+			width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#sidebar{
+			background-color:#F4D6DE;
+			width: 700px;
+			text-align: center;
+			height: 40px;
+			border-radius: 0px 0px 10px 10px;
+		}
