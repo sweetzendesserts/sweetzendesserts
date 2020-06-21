@@ -29,7 +29,15 @@
 			margin-right: 10px;
 			font-size: 20px;
 			margin-top: 50px;
+			font-family: "Quicksand-Regular";
+			color: #4F4F4F;
 		}
+
+		#additionalinfo p{
+			margin-top: 0;
+		}
+
+
 
 		a{
 			text-decoration: none;
@@ -126,35 +134,37 @@
 		}
 		
 
-		.cuppies{
-			width: 430px;
+		.cuppies img{
+			width: 200px;
 			height: 200px;
-			background-size: cover;
-			background-repeat: no-repeat;
-			opacity: .7;
-			text-align: center;
-			font-size: 25px;
-			color: white;
+			margin-left: 50px;
 			border-radius: 10px 10px 10px 10px;
 			float: left;
+			margin-top: 60px;
 
 		}
 
 		.specific{
-			width: 250px;
+			width: 400px;
 			float: left;
 		}
 	
 
-		a {
+		.specific a {
 			text-decoration: none;
-			color: #0C1C3F;
+			color: #581845;
+			font-weight: bold;
+
 			
 
 		}
 
 		.block{
 			width: auto;
+		}
+
+		#tiny{
+			font-size: 11px;
 		}
 
 		/*
@@ -265,21 +275,17 @@
 
 			#additionalinfo img{
 				float: none;
+
 			}
 
 			.cuppies {
-				width: 95%;
-				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				float: none;
+				margin-bottom: 50px;
 			}
 
 	
-		}
-		
-		@media (max-width:380px){
-			#sidebar a{
-				font-size: 11px;
-				padding: 5px;
-			}
 		}
 
 
@@ -314,7 +320,7 @@
 
 			<a href="index.html" class="bar"> Home</a>
 			<a href="about.html" class="bar"> About</a>
-			<a href="#" class="bar"> Contact Us</a>
+			<a href="#" class="bar">To Order</a>
 
 		
 			</div>
@@ -332,21 +338,30 @@
 			<div id="additionalinfo">
 
 				<div class="specific">
-				<p><strong>Email</strong>
+				<p> Since our desserts are made-to-order, we typically need 48 hours notice. To place an order, please email or text us, and we will get back back to you as soon as possible!</p>
+				<p><strong>Email</strong><span id="tiny"> (click below)</span>
 					<br>
-					<a href="mailto:orders@sweetzendesserts.com">orders@sweetzendesserts.com</a>
+					<a href="mailto:orders@sweetzendesserts.com?subject=Order Inquiry">orders@sweetzendesserts.com</a>
 				</p>
 				<p>
 					<strong> Phone Number</strong>
 					<br>
-				(310) 689-6841
+				<a href="tel:+13106896841">(310) 689-6841</a>
+			</p>
+
+			<p>Venmo: <a href="https://venmo.com/sweetzen">@sweetzen</a> 
+			<br>
+			Cash App: <a href="https://cash.app/$sweetzendesserts">$sweetzendesserts
+			</a>
 			</p>
 			</div>
 
-			<div>
-				<img src="Images_gal/cups.jpg" alt="cups" class="cuppies">
 			</div>
+				
+			<div class="cuppies"> 
 
+				<img src="Images_gal/hearttree.PNG">
+				
 			</div>
 
 			
