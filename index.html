@@ -23,6 +23,10 @@
 			src: url("Quicksand-Regular.otf");
 		}
 
+		@font-face{
+				font-family: "playfair-display";
+				src: url(PlayfairDisplay-Italic.otf);
+			}
 	
 
 		#entire{
@@ -34,13 +38,13 @@
 		}
 		
 		#header{
-			background-image: url(Images_gal/Sweet_Zen.jpg);
+			background-image: url(Images_gal/Sweet_Zen.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 			border-radius: 10px 10px 10px 10px;
 			background-position: center;
 			width: 438px;
-			height: 172px;
+			height: 120px;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -81,7 +85,7 @@
 		#img_gal{
 			padding-top: 40px;
 			text-align: center;
-			color: #ECC4CF;
+			color: #E0AFC0;
 			background-color: white;
 			font-family: "Quicksand-Regular";
 			font-weight: bold;
@@ -89,7 +93,7 @@
 		.float{
 			float: left;
 			width: 273.33px;
-			height: 360px;
+			height: 340px;
 			text-align: center;
 		}
 		
@@ -97,10 +101,10 @@
 		.footer{
 			text-align: center;
 			font-size: 12px;
-			background-color: #D3EAC4 ;
+			background-color: #ECD0D7 ;
 			margin-top: 20px;
 			margin-bottom: 10px;
-			color: #ECC4CF;
+			color: black;
 			border-radius: 10px;
 			padding-top: 2px;
 			padding-bottom: 2px;
@@ -130,13 +134,16 @@
 			clear: both;
 		}
 		#sidebar{
-			background-color: #F4D6DE;
-			width: 760px;
+			background-color: #ECD0D7;
+			width: 770px;
 			text-align: center;
-			height: 30px;
+			height: 80px;
 			margin-left: auto;
 			margin-right: auto;
-			padding-left: 40px;
+			padding-left: 30px;
+			color: white;
+			font-family:"Quicksand-Regular";
+
 		}
 
 		.experiment{
@@ -148,12 +155,12 @@
 		}
 
 		.experiment_2{
-			padding-top: 190px;
+			padding-top: 185px;
 			position: static;
 			margin-top: 20px;
 		}
 		.pink{
-			background-color:#F4D6DE;
+			background-color:#ECD0D7;
 			width: 800px;
 			margin-left: auto;
 			margin-right: auto;
@@ -174,6 +181,7 @@
 		#sidebar a {
 			font-family: "Quicksand-Regular";
 			font-weight: bold;
+
 		}
 
 		.block{
@@ -185,6 +193,53 @@
 			color: darkgrey;
 			font-size: 10px;
 		}
+
+		.foodinfo{
+			font-size: 12px;
+			font-weight: bold;
+			font-family: "Quicksand-Regular";
+
+		}
+
+		#sidebar, #img_gal{
+			font-size: 18px;
+		}
+		
+		.needspace{
+			height: 20px;
+		}
+		.needlessspace{
+			height: 10px;
+		}
+
+		.compinfo{
+			font-size: 15px;
+			font-weight: bold;
+			padding-top: 10px;
+			width: auto;
+			font-family: "playfair-display";
+
+			
+		}
+
+		.compinfo br{
+			display: none;
+		}
+
+		#contactus{
+			text-align: center;
+			font: 14px;
+			color: black;
+			font-family: "Quicksand-Regular";
+		}
+
+		#contactus a{
+			text-decoration: none;
+			color: black;
+		}
+
+		sup{
+			font-size: 8px;		}
 
 
 @media (max-width:900px) {
@@ -239,7 +294,7 @@
 
 			#sidebar{
 				width: auto;
-				height: 20px;
+				height: 65px;
 				padding-bottom: 15px;
 				margin-left: 10px;
 				margin-right: 10px;
@@ -278,6 +333,7 @@
 			}
 			#header{
 				height: 90%;
+				width: 70%;
 			}
 			.experiment_2{
 				padding-top: 0;
@@ -314,7 +370,6 @@
 			}
 			#sidebar{
 				width: auto;
-				height: 20px;
 				padding-bottom: 15px;
 				padding-left: 0;
 			}
@@ -333,10 +388,37 @@
 			}
 		}
 
+		@media (max-width:545px){
+		.compinfo{
+			padding-top: 0
+			font-size: 10px;
+		}
+		.pink{
+			padding-bottom: 0;
+			padding-top: 20px;
+			margin-bottom: 0;
+		}
+	
+		.needlessspace{
+			display: none;
+		}
+
+		#sidebar{
+			padding-bottom: 30px;
+		}
+
+		.compinfo br{
+			display: block;
+		}
+	
+		}
+
+
 		@media (max-width:380px){
-			#sidebar a{
+			#sidebar{
 				font-size: 11px;
-				padding: 5px;
+				
+				padding-bottom: 10px;
 			}
 		}
 
@@ -357,7 +439,10 @@
 			<div class="pink">
 
 				<a href="https://www.instagram.com/sweetzendesserts/" target="_blank"><img src="Images_gal/insta.jpg" class="insta" alt="insta"></a>
-				<a href="https://www.facebook.com/sweetzendesserts/" target="_blank"><img src="Images_gal/facebook.jpg" class="fb" alt="facebook"></a>
+				<a href="https://www.facebook.com/Sweetzen-100140901568466/" target="_blank"><img src="Images_gal/facebook.jpg" class="fb" alt="facebook"></a>
+
+
+				
 
 	<div id="header">
 
@@ -365,7 +450,15 @@
 
 			</div>
 
+
+
 	<div id="sidebar">
+
+		<div class="needlessspace"></div>
+
+		<span class="compinfo"> Vegan, gluten-free desserts <br>free of refined sugars and additives </span>
+
+		<div class="needspace"></div>
 
 		<a href="#" class="bar"> Home</a>
 		<a href="about.html" class="bar"> About</a>
@@ -380,7 +473,11 @@
 		<div class="experiment_2">
 
 			<div id="img_gal">
-	Menu
+			
+	Menu 
+	<br>
+	<span class="foodinfo">(Click on desserts to view ingredients)</span>
+	
 	</div>
 
 	
@@ -389,25 +486,60 @@
 		<div class="float">
 		
 
-		<a href="dist/images/cheesecake.jpg" data-lightbox="roadtrip" data-title="Blueberry Zen-cake"><img src="Images_gal/cheesecake.jpg" class="pics" alt="Blueberry_Cheesecake"></a>
+		<a href="dist/images/greenpie.jpg" data-lightbox="roadtrip" data-title="Key Lime Zen-cake: Coconut Flakes, Pecans, Agave Syrup, Date Paste, Lime Juice, Coconut Milk, Avocado, Coconut Oil, Lecithin, Vanilla Paste, Superfood Powder"><img src="Images_gal/greenpie.jpg" class="pics" alt="Key_lime"></a>
 			
 			<div class="text"><span>
-			 Large Cakes & Pies <br> Variations: Strawberry, Blueberry, Key Lime, and Coconut Cream<br>$68.00 
+			 9" Vegan Key Lime Zen Cake <br>$68.00 
+			</span></div>
+			
+		</div>
+
+
+		<div class="float">
+		
+
+		<a href="dist/images/coconut.jpg" data-lightbox="roadtrip" data-title="Coconut Zen-cake: Coconut Flakes, Date Paste, Coconut Milk, Coconut Meat, Coconut Oil, Lecithin, Vanilla Paste"><img src="Images_gal/coconut.jpg" class="pics" alt="Coconut_cream"></a>
+			
+			<div class="text"><span>
+			 9" Vegan Coconut Zen Cake <br>$68.00 
+			</span></div>
+			
+		</div>
+
+
+		<div class="float">
+		
+
+		<a href="dist/images/cheesecake.jpg" data-lightbox="roadtrip" data-title="Blueberry Zen-cake: Coconut Flakes, Almonds, Cashews, Date Paste, Almond Milk, Blueberries, Lemon Juice, Agave Syrup, Coconut Oil, Lecithin, Vanilla Paste, Maqui Powder "><img src="Images_gal/cheesecake.jpg" class="pics" alt="Blueberry_Cheesecake"></a>
+			
+			<div class="text"><span>
+			 9" Vegan Blueberry Zen Cake <br>$68.00 
+			</span></div>
+			
+		</div>
+
+		<div class="float">
+		
+
+		<a href="dist/images/strawberry.jpg" data-lightbox="roadtrip" data-title="Strawberry Zen-cake: Coconut Flakes, Almonds, Cashews, Date Paste, Almond Milk, Strawberry, Lemon Juice, Agave Syrup, Coconut Oil, Lecithin, Vanilla Paste, Beetroot Powder "><img src="Images_gal/strawberry.jpg" class="pics" alt="strawberry_Cheesecake"></a>
+			
+			<div class="text"><span>
+			 9" Vegan Strawberry Zen Cake <br>$68.00 
 			</span></div>
 			
 		</div>
 
 
 
-		<div class="float">
+		<!--<div class="float">
 
 
 		<a href="dist/images/pinkie.jpg" data-lightbox="roadtrip" data-title="Mini Strawberry Zen-cake"><img src="Images_gal/pinkie.jpg" class="pics" alt="Strawberry_cup"></a>
 
 			<div class="text"><span>
-			Mini Cakes & Pies <br>
+			Mini Vegan Strawberry Cheesecake<br>
 
-			Variations: Strawberry and Blueberry
+			
 
 			<br>
 			$5.50 each
@@ -415,12 +547,12 @@
 			*8 order minimum
 			</span></div>
 		
-		</div>
+		</div>-->
 
 		<div class="float">
 		
 
-		<a href="dist/images/golden.jpg" data-lightbox="roadtrip" data-title="Golden Nuggets"><img src="Images_gal/golden.jpg" class="pics" alt="Coconut_chocolate_truffle"></a>
+		<a href="dist/images/golden.jpg" data-lightbox="roadtrip" data-title="Golden Nuggets: Coconut Flour, Agave Syrup, Almonds, Coconut Butter, Coconut Oil, Raw Chocolate (Cocoa Powder, Agave Syrup, Succanant, Cocoa Butter, Vanilla Paste), Vanilla Paste"><img src="Images_gal/golden.jpg" class="pics" alt="Coconut_chocolate_truffle"></a>
 			
 			<div class="text"><span>
 			Golden Nuggets
@@ -435,7 +567,7 @@
 
 		<div class="float">
 
-		<a href="dist/images/purple.jpg" data-lightbox="roadtrip" data-title="Chocolate Heart Cup"><img src="Images_gal/purple.jpg" class="pics" alt="heart"></a>
+		<a href="dist/images/purple.jpg" data-lightbox="roadtrip" data-title="Lavender Truffle: Coconut Flour, Agave Syrup, Cashew, Coconut Butter, Raw Chocolate (Cocoa Powder, Agave Syrup, Succanant, Cocoa Butter, Vanilla Paste),Vanilla Paste, Lavender, Maqui Powder"><img src="Images_gal/purple.jpg" class="pics" alt="purple"></a>
 			
 			<div class="text"><span>
 			Lavender Truffle <br> $2.50 <br>
@@ -447,7 +579,7 @@
 
 		<div class="float">
 
-			<a href="dist/images/matcha.jpg" data-lightbox="roadtrip" data-title="Matcha Truffle"><img src="Images_gal/matcha.jpg" class="pics" alt="matcha"></a>
+			<a href="dist/images/matcha.jpg" data-lightbox="roadtrip" data-title="Matcha Truffle: Coconut Flour, Agave Syrup, Cashew, Coconut Butter, Raw Chocolate (Cocoa Powder, Agave Syrup, Succanant, Cocoa Butter, Vanilla Paste),Vanilla Paste, Matcha Powder"><img src="Images_gal/matcha.jpg" class="pics" alt="matcha"></a>
 
 			<div class="text"><span>
 			Matcha Truffle <br> $2.50 <br>
@@ -458,7 +590,18 @@
 
 		<div class="float">
 
-		<a href="dist/images/panna.jpg" data-lightbox="roadtrip" data-title="Panna Cotta"><img src="Images_gal/panna.jpg" class="pics" alt="pannacotta"></a>
+			<a href="dist/images/Rose.jpg" data-lightbox="roadtrip" data-title="Rose Truffle: Coconut Flour, Agave Syrup, Cashew, Rose Water, Coconut Butter, Raw Chocolate (Cocoa Powder, Agave Syrup, Succanant, Cocoa Butter, Vanilla Paste)"><img src="Images_gal/Rose.jpg" class="pics" alt="Rose"></a>
+
+			<div class="text"><span>
+			Rose Truffle <br> $2.50 <br>
+			*8 order minimum
+			</span></div>
+		
+		</div>
+
+		<div class="float">
+
+		<a href="dist/images/panna.jpg" data-lightbox="roadtrip" data-title="Panna Cotta: Coconut Milk, Agave Syrup, Tapioca Flour, Vanilla Paste, Agar Agar, Lemon Zest"><img src="Images_gal/panna.jpg" class="pics" alt="pannacotta"></a>
 
 			<div class="text"><span>
 			Panna Cotta <br> $5.00 <br> *4 order minimum
@@ -475,7 +618,17 @@
 		<div class="disclaimer">*Decorations in images not included. Our products are created in a facility that contains dairy, soy, and tree nuts and may contain traces of these allergens. </div>
 
 
-		<div class="footer"> Sweet Zen<sup>TM</sup> 2019</div>
+		<div class="footer"> 
+
+			<div id="contactus"> <strong>Contact Us</strong>
+				<br> <a href="mailto:orders@sweetzendesserts.com">orders@sweetzendesserts.com</a>
+				<br>
+				<a href="tel:+13106896841">(310) 689-6841</a></div>
+
+				<br>
+
+
+			Sweet Zen Desserts<sup>TM</sup> 2019</div>
 
 		</div>
 
