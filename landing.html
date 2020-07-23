@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta name="viewport" content="width=device-width, intial-scale=1">
@@ -11,8 +11,13 @@
 
 	<title>Landing Page</title>
 	<style>
+
+		@font-face{
+			font-family: "Quicksand-Regular";
+			src: url("Quicksand-Regular.otf");
+		}
 		
-			#header{
+		#header{
 			background-image: url(Images_gal/Sweet_Zen.png);
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -22,72 +27,54 @@
 			height: 120px;
 			margin-left: auto;
 			margin-right: auto;
+			padding: 10px;
 		}
 
 		#wrap{
 			background-color:#ECD0D7;
-			width: auto;
+			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 			border-radius: 10px;
-			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-top: 20px;
+			padding-bottom: 30px;
 		}
 
 		#clickables{
 			margin-top: 45px;
 		}
 
-			@font-face{
-			font-family: "Quicksand-Regular";
-			src: url("Quicksand-Regular.otf");
-		}
+
 
 		.rows{
 			text-align: center;
-			margin-bottom: 45px;
+			margin-bottom: 25px;
 			background-color: #ECD0D7;
 			width: 80%;
 			height: 30px;
 			border-radius: 10px;
 			margin-left: auto;
 			margin-right: auto;
-			padding: 3px;
+			padding: 15px;
 		}
 
 		.rows a{
 			font-family: "Quicksand-Regular";
 			text-decoration: none;
-			font-size: 18px;
+			font-size: 22px;
 			font-weight: bold;
 			line-height: 30px;
 			color: white;
 		}
 
-		.footer{
-			text-align: center;
-			font-size: 12px;
-			background-color: #ECD0D7 ;
-			margin-top: 20px;
-			margin-bottom: 10px;
-			color: black;
-			border-radius: 10px;
-			padding-top: 2px;
-			padding-bottom: 2px;
-
-		
+		.rows:hover{
+			background-color: #9fcf9e;
+			transition-duration: .5s;
 		}
 
-		#contactus{
-			text-align: center;
-			font: 14px;
-			color: black;
-			font-family: "Quicksand-Regular";
-		}
 
-		#contactus a{
-			text-decoration: none;
-			color: black;
+		#entire{
+			height: auto;
 		}
 
 
@@ -112,7 +99,7 @@
 <body>
 
 
-		
+		<div id="entire">
 		<div id="wrap">
 		<div id="header">
 
@@ -148,17 +135,6 @@
 
 		</div>
 
-		<div class="footer"> 
-
-			<div id="contactus"> <strong>Contact Us</strong>
-				<br> <a href="mailto:orders@sweetzendesserts.com">orders@sweetzendesserts.com</a>
-				<br>
-				<a href="tel:+13106896841">(310) 689-6841</a></div>
-
-				<br>
-
-
-			Sweet Zen Desserts<sup>TM</sup> 2019</div>
 
 		</div>
 
